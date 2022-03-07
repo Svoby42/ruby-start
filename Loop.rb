@@ -38,3 +38,7 @@ groceries = ["bananas", "potatoes", "daniela"]
 groceries.each do |food|
   puts "Get #{food}"
 end
+
+(0..5).each do |i|
+  puts "#{i}"
+end
