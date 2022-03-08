@@ -6,17 +6,13 @@ reversed = [sentence.length]
 
 while i >= 0 do
   #print sentence[i]
-  reversed[x] = sentence[i]
+  reversed[x] = sentence[i].to_s.downcase
   i -= 1
   x += 1
 end
 
-p reversed
-
 i = reversed.length
-j = 0
 start = reversed.length
-finish = 0
 
 while i >= 0 do
   if reversed[i] == " " || i == 0
