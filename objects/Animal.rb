@@ -42,3 +42,4 @@ puts dog.name
 max = GermanShepard.new
 max.name = "Max"
 puts max.bark
+
