@@ -40,6 +40,6 @@ inventory =  BoutiqueInventory.new([
 p inventory.item_names
 p inventory.cheap
 p inventory.out_of_stock
+#Sorry about that
 p inventory.stock_for_item("Black Short Skirt")
-puts "NIGGA"
 puts inventory.total_stock
