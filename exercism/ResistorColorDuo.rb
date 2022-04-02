@@ -1,8 +1,13 @@
-class ResistorColorDuo
+class ResistorColor
+  COLORS = %w[black brown red orange yellow green blue violet grey white].freeze
   def self.value(array)
-    colors = %w[black brown red orange yellow green blue violet grey white]
-    array.take(2).map{ |color| colors.index(color) }.join.to_i
+    array.take(2).map{ |color| COLORS.index(color) }.join.to_i
+  end
+
+  def self.color_code(value)
+    COLORS.index(value)
   end
 end
 
-p ResistorColorDuo.value(%w[green brown orange])
+p ResistorColor.value(%w[green brown orange])
+p ResistorColor.color_code("orange")
