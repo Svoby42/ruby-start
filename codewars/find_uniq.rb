@@ -10,6 +10,13 @@ def find_uniq(nums)
   nums.each_with_object(Hash.new(0)) {|num, hash| hash[num] += 1}.key(1)
 end
 
+# perhaps even a better solution but almost the same as the first one
+# using hash on an array with repeating numbers is in principle the same as
+# calling the .uniq method
+
+def find_uniq_alternative(nums)
+  nums.uniq.each { |x| return x if nums.count(x) == 1 }
+end
 
 p find_uniq([1,1,1,1,0])
 p find_uniq([1, 1, 1, 2, 1, 1])
