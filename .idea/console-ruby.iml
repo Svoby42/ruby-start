@@ -11,6 +11,7 @@
     </content>
     <orderEntry type="jdk" jdkName="ruby-3.0.3-p157" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="ipaddr (v1.2.4, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ostruct (v0.5.3, ruby-3.0.3-p157) [gem]" level="application" />
   </component>
 </module>
