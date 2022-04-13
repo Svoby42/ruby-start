@@ -19,3 +19,28 @@ def test
 end
 
 test { |i| puts "Block #{i}" }
+
+module Greeting
+  def hello
+    puts "Hello from module"
+  end
+end
+
+class MyClass
+  prepend Greeting
+  def hello
+    puts "Hello from class"
+  end
+end
+
+MyClass.new.hello #=> Hello from module
+puts "#####"
+
+class AnotherClass
+  include Greeting
+  def hello
+    puts "Hello from class"
+  end
+end
+
+AnotherClass.new.hello #=> Hello from class
